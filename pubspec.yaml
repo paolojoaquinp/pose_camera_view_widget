@@ -1,6 +1,6 @@
 name: pose_camera_view
 description: "Pose Camera view uses Google ML Kit to track your push-ups. It emits 'init', 'middle', and 'completed' events for each rep, and displays the total count."
-version: 1.0.1
+version: 1.0.3
 homepage: https://www.paolojoaquin.com
 repository: https://github.com/paolojoaquinp/pose_camera_view_widget
 

@@ -14,9 +14,9 @@ A Flutter widget that allows you to detect and analyze poses in real-time using 
 <img src="https://github.com/paolojoaquinp/pose_camera_view/blob/main/screenshots/pose_camera_view1.gif?raw=true" width="250" height="470" />
 
 
-## Instalación
+## Installation
 
-Addd `pose_camera_view` to dependecies in your file `pubspec.yaml`:
+Add `pose_camera_view` to dependecies in your file `pubspec.yaml`:
 
 ```yaml
 dependencies:
@@ -52,7 +52,7 @@ PoseCameraView(
 )
 
 ```
-### Parámetros
+### Parameters
 
 * onPoseData: Callback that is called with the detected pose data.
 * elbowAngleMin: Minimum elbow angle to consider a valid flexion.

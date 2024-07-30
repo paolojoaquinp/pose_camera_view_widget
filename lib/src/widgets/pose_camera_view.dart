@@ -1,10 +1,7 @@
-// lib/src/widgets/pose_camera_view.dart
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 import 'package:pose_camera_view/src/src.dart';
-
 
 class PoseCameraView extends StatefulWidget {
   final void Function(PoseData) onPoseData;
@@ -80,7 +77,8 @@ class _PoseCameraViewState extends State<PoseCameraView> {
 
   Future<void> _startLiveFeed() async {
     final camera = _cameras[_cameraIndex];
-    _controller = await CameraControllerUtils.initializeCameraController(camera);
+    _controller =
+    await CameraControllerUtils.initializeCameraController(camera);
 
     // Get the camera's capabilities
     _minAvailableZoom = await _controller!.getMinZoomLevel();
@@ -237,10 +235,9 @@ class _PoseCameraViewState extends State<PoseCameraView> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text('Zoom: ${_currentZoomLevel.toStringAsFixed(1)}x',
-                          style: const TextStyle(
-                            color: Colors.white
-                          ),
+                        Text(
+                          'Zoom: ${_currentZoomLevel.toStringAsFixed(1)}x',
+                          style: const TextStyle(color: Colors.white),
                         ),
                         Slider(
                           value: _currentZoomLevel,
@@ -248,10 +245,9 @@ class _PoseCameraViewState extends State<PoseCameraView> {
                           max: _maxAvailableZoom,
                           onChanged: (value) => _setZoomLevel(value),
                         ),
-                        Text('Exposure: ${_currentExposureOffset.toStringAsFixed(1)}',
-                          style: const TextStyle(
-                              color: Colors.white
-                          ),
+                        Text(
+                          'Exposure: ${_currentExposureOffset.toStringAsFixed(1)}',
+                          style: const TextStyle(color: Colors.white),
                         ),
                         Slider(
                           value: _currentExposureOffset,
@@ -285,3 +281,4 @@ class _PoseCameraViewState extends State<PoseCameraView> {
     );
   }
 }
+

@@ -3,7 +3,16 @@ import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 
+/// Utility class for camera controller operations and image processing.
 class CameraControllerUtils {
+  /// Initializes and returns a [CameraController] for the given [camera].
+  ///
+  /// Sets up the camera with high resolution and platform-specific image format.
+  /// Audio is disabled for this controller.
+  ///
+  /// [camera] The description of the camera to be used.
+  ///
+  /// Returns a [Future] that completes with the initialized [CameraController].
   static Future<CameraController> initializeCameraController(
       CameraDescription camera,
       ) async {
@@ -20,6 +29,15 @@ class CameraControllerUtils {
     return controller;
   }
 
+  /// Converts a [CameraImage] to an [InputImage] for use with ML Kit.
+  ///
+  /// Handles platform-specific image rotation and format conversion.
+  ///
+  /// [image] The camera image to convert.
+  /// [controller] The current camera controller.
+  /// [camera] The description of the current camera.
+  ///
+  /// Returns an [InputImage] if conversion is successful, null otherwise.
   static InputImage? inputImageFromCameraImage(
       CameraImage image,
       CameraController controller,
@@ -63,6 +81,7 @@ class CameraControllerUtils {
     );
   }
 
+  /// Map of device orientations to their corresponding rotation values in degrees.
   static final Map<DeviceOrientation, int> _orientations = {
     DeviceOrientation.portraitUp: 0,
     DeviceOrientation.landscapeLeft: 90,
