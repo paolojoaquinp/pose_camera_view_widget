@@ -7,7 +7,7 @@ import 'package:pose_camera_view/src/src.dart';
 
 
 class PoseCameraView extends StatefulWidget {
-  final Function(PoseData) onPoseData;
+  final void Function(PoseData) onPoseData;
   final CameraLensDirection initialCameraLensDirection;
   final double elbowAngleMin;
   final double elbowAngleMax;
