@@ -9,9 +9,9 @@ A Flutter widget that allows you to detect and analyze poses in real-time using 
 
 ## Preview
 
-<img src="https://github.com/paolojoaquinp/pose_camera_view/blob/main/screenshots/pose_camera_view.gif?raw=true" width="250" height="470" />
+<img src="https://github.com/paolojoaquinp/pose_camera_view_widget/blob/master/screenshots/pose_camera_view.gif?raw=true" width="250" height="470" />
 
-<img src="https://github.com/paolojoaquinp/pose_camera_view/blob/main/screenshots/pose_camera_view1.gif?raw=true" width="250" height="470" />
+<img src="https://github.com/paolojoaquinp/pose_camera_view_widget/blob/master/screenshots/pose_camera_view1.gif?raw=true" width="250" height="470" />
 
 
 ## Installation
