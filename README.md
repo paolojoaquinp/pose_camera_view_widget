@@ -1,11 +1,11 @@
-![banner](placeholder_for_banner_image.jpg)
+![banner](https://i.imgur.com/arTQKLv.png)
 
 # PoseCameraView Widget
 
-[![build](https://img.shields.io/github/workflow/status/your_username/pose_camera_view/CI)](https://github.com/your_username/pose_camera_view/actions)
+[![build](https://img.shields.io/github/workflow/status/paolojoaquinp/pose_camera_view/CI)](https://github.com/paolojoaquinp/pose_camera_view/actions)
 [![pose_camera_view](https://img.shields.io/pub/v/pose_camera_view?label=pose_camera_view)](https://pub.dev/packages/pose_camera_view)
 
-Un widget de Flutter que permite detectar y analizar poses en tiempo real utilizando la cámara del dispositivo, con enfoque específico en el seguimiento de flexiones (push-ups).
+A Flutter widget that allows you to detect and analyze poses in real-time using the device's camera, with a specific focus on push-up tracking.
 
 ## Vista previa
 
@@ -13,18 +13,18 @@ Un widget de Flutter que permite detectar y analizar poses en tiempo real utiliz
 
 ## Instalación
 
-Agrega `pose_camera_view` a las dependencias en tu archivo `pubspec.yaml`:
+Addd `pose_camera_view` to dependecies in your file `pubspec.yaml`:
 
 ```yaml
 dependencies:
   pose_camera_view: <última_versión>
 ```
-Importalo en el codigo
+Make the import in your code.
 ```dart
 import 'package:pose_camera_view/pose_camera_view.dart';
 
 ```
-Como usar
+How use it
 ```dart
 PoseCameraView(
   onPoseData: (poseData) {
@@ -51,21 +51,20 @@ PoseCameraView(
 ```
 ### Parámetros
 
-* onPoseData: Callback que se llama con los datos de pose detectados.
-* elbowAngleMin: Ángulo mínimo del codo para considerar una flexión válida.
-* elbowAngleMax: Ángulo máximo del codo para considerar una flexión válida.
+* onPoseData: Callback that is called with the detected pose data.
+* elbowAngleMin: Minimum elbow angle to consider a valid flexion.
+* elbowAngleMax: Maximum elbow angle to consider a valid flexion.
 
-### Estados de flexión
+### Push Up states
 
-* PushUpState.init: Posición inicial de la flexión.
-* PushUpState.middle: A mitad de la flexión.
-* PushUpState.completed: Flexión completada.
-* PushUpState.neutral: Estado neutro o no reconocido.
+* PushUpState.init: Initial position of pushup.
+* PushUpState.middle: Halfway through pushup.
+* PushUpState.completed: Pushup completed.
 
-## Ejemplos
-Para ver un ejemplo más completo, consulta la carpeta example en este repositorio.
-Contribuciones
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request con tus sugerencias.
+## Examples
+For a more complete example, see the example folder in this repository.
+Contributions
+Contributions are welcome. Please open an issue or send a pull request with your suggestions.
 
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+## License
+This project is licensed under the MIT License - see the LICENSE file for more details.

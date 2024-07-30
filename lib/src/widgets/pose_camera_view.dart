@@ -3,8 +3,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
-import 'package:pose_camera_view/src/enums/enums.dart';
-import 'package:pose_camera_view/src/models/models.dart';
 import 'package:pose_camera_view/src/src.dart';
 
 
@@ -15,12 +13,12 @@ class PoseCameraView extends StatefulWidget {
   final double elbowAngleMax;
 
   const PoseCameraView({
-    Key? key,
+    super.key,
     required this.onPoseData,
     this.initialCameraLensDirection = CameraLensDirection.front,
     this.elbowAngleMin = 60.0,
     this.elbowAngleMax = 150.0,
-  }) : super(key: key);
+  });
 
   @override
   _PoseCameraViewState createState() => _PoseCameraViewState();
@@ -230,7 +228,7 @@ class _PoseCameraViewState extends State<PoseCameraView> {
                     left: 16,
                     child: FloatingActionButton(
                       onPressed: _switchLiveCamera,
-                      child: Icon(Icons.flip_camera_ios),
+                      child: const Icon(Icons.flip_camera_ios),
                     ),
                   ),
                   Positioned(

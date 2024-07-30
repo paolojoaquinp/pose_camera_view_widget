@@ -7,11 +7,11 @@ class CameraPreviewWidget extends StatelessWidget {
   final bool changingCameraLens;
 
   const CameraPreviewWidget({
-    Key? key,
+    super.key,
     required this.controller,
     this.customPaint,
     this.changingCameraLens = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

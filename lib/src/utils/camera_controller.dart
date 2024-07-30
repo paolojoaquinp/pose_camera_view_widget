@@ -1,5 +1,3 @@
-// lib/src/utils/camera_controller.dart
-
 import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
@@ -46,7 +44,7 @@ class CameraControllerUtils {
     }
     if (rotation == null) return null;
 
-    final format = InputImageFormatValue.fromRawValue(image.format.raw);
+    final format = InputImageFormatValue.fromRawValue(image.format.raw as int);
     if (format == null ||
         (Platform.isAndroid && format != InputImageFormat.nv21) ||
         (Platform.isIOS && format != InputImageFormat.bgra8888)) return null;
