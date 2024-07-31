@@ -1,3 +1,5 @@
+# 1.0.4
+- Package readme updated.
 # 1.0.3
 - Package documentation updated.
 # 1.0.2
